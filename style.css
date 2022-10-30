@@ -1,0 +1,200 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap');
+
+:root {
+    --cor0: #ffffff;
+    --cor1: #c5c5c5ab;
+    --cor2: #BFBFBF;
+    --cor3: #8C8C8C;
+    --cor4: #595959;
+    --cor5: #0D0D0D;
+    --cor6: #a1a1a173;
+
+    --fonte-padrao: Arial, Helvetica, sans-serif; 
+    --fonte-destaque: 'Raleway', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor2);
+    font-family: var(--fonte-padrao);
+    text-align: justify;
+
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor6));
+    
+}
+
+header h1 {
+    text-align: center;
+    font-family: var(--fonte-destaque);
+    font-weight: bold;
+    font-size: 2.5em;
+    color: var(--cor0);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.623);
+    padding: 10px;
+    
+}
+
+header nav {
+    background-image: linear-gradient(to top, var(--cor1), var(--cor6));
+    padding: 8px;
+    
+}
+header a {
+    color: var(--cor0);
+    text-decoration: none;
+    padding: 6px 10px;
+    font-family: var(--fonte-destaque);
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+header a:hover {
+    background-color: var(--cor4);
+    padding: 4px 6px;
+    text-decoration: underline;
+    transition-duration: 0.4s;
+}
+
+main {
+    background-color: var(--cor0);
+    min-width: 350px;
+    max-width: 1000px;
+    margin: 10px auto;
+    padding: 20px 20px 60px 20px;
+    border-radius: 10px; 
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.281);
+}
+
+main h1 {
+    color: var(--cor4);
+    font-family: var(--fonte-destaque);
+    text-shadow: 1px 1px 3px #00000071;
+    padding: 20px 0px;
+    font-size: 2em;
+}
+
+main p {
+    padding: 10px;
+    text-indent: 30px;
+    line-height: 1.7em;
+}
+
+article a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: var(--fonte-destaque);
+    background-color: var(--cor2);
+    border-radius: 6px;
+    padding: 1px 5px;
+}
+
+article a:hover {
+    background-color: var(--cor2);
+    color: var(--cor5);
+    transition-duration: 0.3s;
+}
+
+article h3 {
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 1px 1px 3px #00000071;
+    color: var(--cor4);
+    padding: 30px ;
+
+}
+article strong {
+    background-image: linear-gradient(to right, var(--cor2), var(--cor1));
+}
+
+article img#lado {
+    padding: 10px 20px 0px 0px;
+    float: left;
+    
+    
+}
+
+aside {
+    background-image: linear-gradient(to top, var(--cor4), var(--cor1));
+    padding: 10px;
+    margin: auto;
+    color: var(--cor0);
+    text-shadow: 1px 1px 3px var(--cor4);
+    
+}
+
+aside > h4 {
+    padding-bottom: 10px;
+}
+
+aside a {
+    color: var(--cor0);
+    text-decoration: none;
+    font-family: var(--fonte-destaque);
+    font-weight: bold;
+}
+
+aside a:hover {
+    text-decoration: underline;
+    background-color: var(--cor1);
+    color: var(--cor5);
+    transition-duration: 0.3s;
+}
+
+aside a:active {
+    color: var(--cor2);
+}
+
+img.imagem {
+    min-width: 350px;
+    max-width: 100%;
+}
+
+div.video {
+    background-color: var(--cor4);
+    margin-bottom: 20px;
+    margin: 0px -14px 20px -10px;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.589);
+    padding-bottom: 29.28%;
+    position: relative;
+    
+}
+
+div.video > iframe#video1 {
+    position: absolute;
+    top: 5%;
+    left: 50.3%;
+    width: 49%;
+    height: 90%;
+} 
+
+div.video > iframe#video2 {
+    position: absolute;
+    top: 5%;
+    left: 1%;
+    width: 49%;
+    height: 90%;
+}
+footer {
+    background-color: var(--cor4);
+    margin: auto;
+    text-align: center;
+    font-family: var(--fonte-destaque);
+    font-weight: bold;
+    padding: 10px;
+    color: var(--cor0);
+}
+
+footer q {
+    color: var(--cor5);
+}
