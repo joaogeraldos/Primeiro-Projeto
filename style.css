@@ -3,10 +3,10 @@
 
 :root {
     --cor0: #ffffff;
-    --cor1: #c5c5c5ab;
+    --cor1: #F2EFE4;
     --cor2: #BFBFBF;
-    --cor3: #8C8C8C;
-    --cor4: #595959;
+    --cor3: #737373;
+    --cor4: #3B8C84;
     --cor5: #0D0D0D;
     --cor6: #a1a1a173;
 
@@ -27,7 +27,7 @@ body {
 }
 
 header {
-    background-image: linear-gradient(to bottom, var(--cor3), var(--cor6));
+    background-color: var(--cor3);
     
 }
 
@@ -43,7 +43,7 @@ header h1 {
 }
 
 header nav {
-    background-image: linear-gradient(to top, var(--cor1), var(--cor6));
+    background-color: var(--cor3);
     padding: 8px;
     
 }
@@ -67,9 +67,9 @@ main {
     background-color: var(--cor0);
     min-width: 350px;
     max-width: 1000px;
-    margin: 10px auto;
-    padding: 20px 20px 60px 20px;
-    border-radius: 10px; 
+    margin: 5px auto;
+    padding: 10px 20px 60px 20px;
+    border-radius: 5px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.281);
 }
 
@@ -123,16 +123,19 @@ article img#lado {
 }
 
 aside {
-    background-image: linear-gradient(to top, var(--cor4), var(--cor1));
+    background-color: var(--cor5);
     padding: 10px;
     margin: auto;
     color: var(--cor0);
     text-shadow: 1px 1px 3px var(--cor4);
+    box-shadow: 5px 5px 15px black;
     
 }
 
 aside > h4 {
-    padding-bottom: 10px;
+    padding-bottom: 20px;
+    
+    text-align: center;
 }
 
 aside a {
@@ -149,8 +152,27 @@ aside a:hover {
     transition-duration: 0.3s;
 }
 
+aside a{
+    padding-left: 5px;
+}
+aside img {
+    border-radius: 50%;
+}
 aside a:active {
     color: var(--cor2);
+}
+
+aside ul {
+    display: flex;
+    
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+ 
+#imgb {
+    margin-left: 20px;
 }
 
 img.imagem {
@@ -186,15 +208,11 @@ div.video > iframe#video2 {
     height: 90%;
 }
 footer {
-    background-color: var(--cor4);
+    background-color: var(--cor5);
     margin: auto;
     text-align: center;
     font-family: var(--fonte-destaque);
     font-weight: bold;
     padding: 10px;
-    color: var(--cor0);
-}
-
-footer q {
-    color: var(--cor5);
+    color: var(--cor1);
 }
